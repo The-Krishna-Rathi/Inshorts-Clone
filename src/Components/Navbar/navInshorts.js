@@ -1,11 +1,11 @@
 import HambrugerDrawer from "./HambrugerDrawer";
 import "./NavInshorts.css";
 
-const NavInshorts = () => {
+const NavInshorts = ({ setCategory }) => {
   return (
     <div className="nav">
       <div className="logo">
-        <HambrugerDrawer />
+        <HambrugerDrawer setCategory={setCategory} />
       </div>
       <img
         src="https://assets.inshorts.com/website_assets/images/logo_inshorts.png"

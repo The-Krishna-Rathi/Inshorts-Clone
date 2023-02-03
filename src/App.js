@@ -8,11 +8,13 @@ function App() {
   let [resultNews, setResultNews] = useState([]);
 
   const fetchNews = async () => {
+    console.log(category);
     try {
       resultNews = await axios.get(
         `${process.env.REACT_APP_API_URL}?category=${category}&apiKey=${process.env.REACT_APP_API_KEY}`
       );
 
+      console.log(resultNews.data.sources);
       setResultNews(resultNews.data.sources);
     } catch (e) {
       console.log(e);
@@ -21,11 +23,11 @@ function App() {
 
   useEffect(() => {
     fetchNews();
-  }, []);
+  }, [category]);
 
   return (
     <div className="App">
-      <NavInshorts />
+      <NavInshorts setCategory={setCategory} />
     </div>
   );
 }

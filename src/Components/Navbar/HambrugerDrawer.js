@@ -21,7 +21,7 @@ const darkTheme = createTheme({
   },
 });
 
-export default function HambrugerDrawer() {
+export default function HambrugerDrawer({ setCategory }) {
   const [state, setState] = React.useState({
     left: false,
   });
@@ -51,7 +51,10 @@ export default function HambrugerDrawer() {
       <List>
         {Categories.map((text, index) => (
           <ListItem key={text} disablePadding>
-            <ListItemButton>
+            <ListItemButton
+              style={{ padding: "10px 16px" }}
+              onClick={() => setCategory(text)}
+            >
               <ListItemText primary={capitalize(text)} />
             </ListItemButton>
           </ListItem>
