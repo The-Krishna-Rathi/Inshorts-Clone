@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import "./App.css";
 import NavInshorts from "./Components/Navbar/navInshorts";
+import NewsContainer from "./Components/NewsContainer/NewsContainer";
 
 function App() {
   const [category, setCategory] = useState("general");
@@ -28,6 +29,7 @@ function App() {
   return (
     <div className="App">
       <NavInshorts setCategory={setCategory} />
+      <NewsContainer />
     </div>
   );
 }

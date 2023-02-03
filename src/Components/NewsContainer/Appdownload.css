@@ -1,0 +1,15 @@
+.download {
+  width: 95%;
+  background-color: #f44336;
+  color: white;
+  height: 48px;
+  margin: 20px 0 35px 0;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px 0 black;
+}
+
+.d-text {
+  margin-right: 5vw;
+}
