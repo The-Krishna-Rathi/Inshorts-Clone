@@ -40,3 +40,18 @@
 .read-more {
   margin-top: 40px;
 }
+
+@media (max-width: 870px) {
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card-image img {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .read-more {
+    margin-top: 8px;
+  }
+}
