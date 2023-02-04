@@ -4,7 +4,7 @@ import Appdownload from "./Appdownload";
 import NewsCard from "./NewsCard";
 import { useEffect, useState } from "react";
 
-const NewsContainer = () => {
+const NewsContainer = ({ resultNews }) => {
   const [maxWidthValue, setMaxWidthValue] = useState("md");
 
   useEffect(() => {
@@ -28,7 +28,9 @@ const NewsContainer = () => {
     <>
       <Container maxWidth={maxWidthValue} className="container">
         <Appdownload />
-        <NewsCard />
+        {resultNews.map((news) => {
+          return <NewsCard news={news} key={news.title} />;
+        })}
       </Container>
     </>
   );

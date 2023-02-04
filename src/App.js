@@ -12,11 +12,11 @@ function App() {
     console.log(category);
     try {
       resultNews = await axios.get(
-        `${process.env.REACT_APP_API_URL}?category=${category}&apiKey=${process.env.REACT_APP_API_KEY}`
+        `${process.env.REACT_APP_API_URL}?country=in&category=${category}&apiKey=${process.env.REACT_APP_API_KEY}`
       );
 
-      console.log(resultNews.data.sources);
-      setResultNews(resultNews.data.sources);
+      console.log(resultNews.data.articles);
+      setResultNews(resultNews.data.articles);
     } catch (e) {
       console.log(e);
     }
@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="App">
       <NavInshorts setCategory={setCategory} />
-      <NewsContainer />
+      <NewsContainer resultNews={resultNews} />
     </div>
   );
 }
