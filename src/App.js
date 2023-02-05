@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import NavInshorts from "./Components/Navbar/navInshorts";
 import NewsContainer from "./Components/NewsContainer/NewsContainer";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   const [category, setCategory] = useState("general"); //to manage the category of news
@@ -42,6 +43,7 @@ function App() {
         setLoadMore={setLoadMore}
         totalResults={totalResults}
       />
+      <Footer />
     </div>
   );
 }

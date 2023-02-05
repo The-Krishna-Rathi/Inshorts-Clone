@@ -1,0 +1,25 @@
+.footer-container {
+  color: azure;
+  background-color: rgb(36, 37, 45);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.copy {
+  padding: 1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-around;
+  width: 18%;
+  padding: 1rem;
+}
+
+.icon {
+  height: 2rem;
+  width: 2rem;
+  color: azure;
+}
