@@ -1,3 +1,26 @@
 .container {
   margin: 15px 0 15px 0;
 }
+
+.loadContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.loadButton {
+  text-decoration: none;
+  border: 0px;
+  padding: 0.5rem 1.8rem;
+  background-color: rgb(255, 255, 254);
+  color: rgb(69, 68, 68);
+  box-shadow: 0px 2px 4px 2px #6e6e6e;
+  font-size: medium;
+  border-radius: 2px;
+}
+
+.loadButton:hover {
+  box-shadow: 0px 5px 10px 3px #6e6e6e;
+}
