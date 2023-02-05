@@ -1,3 +1,16 @@
+# Inshort - Clone
+* It is a react based new application to display news
+* It uses Axios library for fetching of data from NEWS API
+* It has all the features as Inshorts offical web application
+* Also learned New concept of Pagination while meking asynchronous requests for generating more responses for a same category
+* It is also responsive in nature for various screen sizes
+
+# Below are some screen shots of the application
+![image](https://user-images.githubusercontent.com/74900144/216832585-07dd52d2-c65a-4e83-99aa-66ae36227f1e.png)
+![image](https://user-images.githubusercontent.com/74900144/216832612-43ac375c-582f-4005-8e1a-82d1e1887bfb.png)
+![image](https://user-images.githubusercontent.com/74900144/216832717-65ff8566-3907-42df-8829-7be17a91ef27.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +81,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+* This application is only made for the learning purpose, not having any intension to harm anyone's rights
