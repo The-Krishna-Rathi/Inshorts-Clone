@@ -37,7 +37,7 @@ const NewsCard = ({ news }) => {
               {time
                 ? `${hour - 12}:${date[4].substring(3, 5)}pm`
                 : `${hour}:${date[4].substring(3, 5)}am`}{" "}
-              on {date[3]} {date[1]}, {date[0]}
+              on {date[2]} {date[1]}, {date[0]}
             </div>
             <div className="description">{news.description}</div>
             <div className="read-more">

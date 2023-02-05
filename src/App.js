@@ -5,19 +5,20 @@ import NavInshorts from "./Components/Navbar/navInshorts";
 import NewsContainer from "./Components/NewsContainer/NewsContainer";
 
 function App() {
-  const [category, setCategory] = useState("general");
-  let [resultNews, setResultNews] = useState([]);
-  let [totalResults, setTotalResults] = useState();
-  let [loadMore, setLoadMore] = useState(20);
+  const [category, setCategory] = useState("general"); //to manage the category of news
+  let [resultNews, setResultNews] = useState([]); //to manage the array of news
+  let [totalResults, setTotalResults] = useState(); //to manage the total result count
+  let [loadMore, setLoadMore] = useState(20); //to manage if more results are needed to be loaded
 
   const fetchNews = async () => {
-    console.log(category);
+    // console.log(category);
     try {
+      // URL used from News API if required go through if its break API_URL and API_KEY in news api
       resultNews = await axios.get(
         `${process.env.REACT_APP_API_URL}?country=in&category=${category}&apiKey=${process.env.REACT_APP_API_KEY}&pageSize=${loadMore}`
       );
 
-      console.log(resultNews);
+      // console.log(resultNews);
       setTotalResults(resultNews.data.totalResults);
       setResultNews(resultNews.data.articles);
     } catch (e) {
@@ -25,13 +26,16 @@ function App() {
     }
   };
 
+  //Since, we are using an api that neededs to be called when anyone of three changes i.e category(user selects a different category), totalResults(for a different category, a different result count has to be set) and loadMore(If a user want's to load more results)
   useEffect(() => {
     fetchNews();
   }, [category, totalResults, loadMore]);
 
   return (
     <div className="App">
+      {/* {Navigation Bar} */}
       <NavInshorts setCategory={setCategory} />
+      {/* {News display container} */}
       <NewsContainer
         resultNews={resultNews}
         loadMore={loadMore}
