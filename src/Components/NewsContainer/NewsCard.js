@@ -18,7 +18,7 @@ const NewsCard = ({ news }) => {
       <div className="main-container">
         <div className="card-container">
           <div className="card-image">
-            <img src={imgsrc} />
+            <img src={imgsrc} alt="news-thumbnail" />
           </div>
           <div className="card-content">
             <div className="card-title">{news.title}</div>

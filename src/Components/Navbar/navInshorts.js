@@ -10,6 +10,7 @@ const NavInshorts = ({ setCategory }) => {
       <img
         src="https://assets.inshorts.com/website_assets/images/logo_inshorts.png"
         height="80%"
+        alt="Inshorts Logo"
       />
     </div>
   );

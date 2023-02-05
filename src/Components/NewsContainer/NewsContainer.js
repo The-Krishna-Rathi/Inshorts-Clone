@@ -42,6 +42,7 @@ const NewsContainer = ({ resultNews, totalResults, setLoadMore, loadMore }) => {
               onClick={loadMoreCall}
               value="Load More"
               className="loadButton"
+              alt="Load More"
             />
           )}
         </div>
