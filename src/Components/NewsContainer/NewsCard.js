@@ -29,7 +29,7 @@ const NewsCard = ({ news }) => {
                   href={news.url}
                   target="_blank"
                   style={{ color: "black", textDecoration: "none" }}
-                  rel="noopener"
+                  rel="noreferrer"
                 >
                   short
                 </a>
@@ -48,7 +48,7 @@ const NewsCard = ({ news }) => {
                   href={news.url}
                   target="_blank"
                   style={{ color: "black", textDecoration: "none" }}
-                  rel="noopener"
+                  rel="noreferrer"
                 >
                   {news.source.name}
                 </a>

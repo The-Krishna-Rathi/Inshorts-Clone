@@ -11,12 +11,12 @@ const Appdownload = () => {
         <img
           src="https://assets.inshorts.com/website_assets/images/appstore.png"
           height="80%"
-          alt="android-download"
+          alt="Android-Download"
         />
         <img
           src="https://assets.inshorts.com/website_assets/images/playstore.png"
           height="80%"
-          alt="ios-download"
+          alt="ios-Download"
         />
       </div>
     </>

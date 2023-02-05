@@ -30,7 +30,8 @@ function App() {
   //Since, we are using an api that neededs to be called when anyone of three changes i.e category(user selects a different category), totalResults(for a different category, a different result count has to be set) and loadMore(If a user want's to load more results)
   useEffect(() => {
     fetchNews();
-  }, [category, totalResults, loadMore, fetchNews]);
+    //eslint-disable-next-line
+  }, [category, totalResults, loadMore]);
 
   return (
     <div className="App">
