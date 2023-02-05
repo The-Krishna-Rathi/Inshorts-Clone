@@ -15,8 +15,9 @@ function App() {
     // console.log(category);
     try {
       // URL used from News API if required go through if its break API_URL and API_KEY in news api
+      const proxyUrl = "https://cors-anywhere.herokuapp.com/"; //Proxy URL to work on netlify as the link is not woring on various browsers
       resultNews = await axios.get(
-        `${process.env.REACT_APP_API_URL}?country=in&category=${category}&apiKey=${process.env.REACT_APP_API_KEY}&pageSize=${loadMore}`
+        `${proxyUrl}${process.env.REACT_APP_API_URL}?country=in&category=${category}&apiKey=${process.env.REACT_APP_API_KEY}&pageSize=${loadMore}`
       );
 
       // console.log(resultNews);
